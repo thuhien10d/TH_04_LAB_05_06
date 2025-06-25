@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thời khoá biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+            padding: 20px;
+        }
+        
+        .timetable {
+            display: grid;
+            row-gap: 10px;
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr);
+            gap: 10px;
+            background-color: #cfbebe;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        
+        .header {
+            font-weight: bold;
+            background-color: #dfe9f3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2> Thời khoá biểu </h2>
+
+    <div class="timetable">
+        <div class="row header">
+            <div>Tiết</div>
+            <div>Thứ 2</div>
+            <div>Thứ 3</div>
+            <div>Thứ 4</div>
+            <div>Thứ 5</div>
+            <div>Thứ 6</div>
+        </div>
+
+        <div class="row">
+            <div>Tiết 1</div>
+            <div>Toán</div>
+            <div>Văn </div>
+            <div>Tiếng Anh</div>
+            <div>Địa</div>
+            <div>Hóa</div>
+        </div>
+
+        <div class="row">
+            <div>Tiết 2</div>
+            <div>Văn</div>
+            <div>Toán</div>
+            <div>Sinh</div>
+            <div>Văn</div>
+            <div>Thể dục</div>
+        </div>
+
+        <div class="row">
+            <div>Tiết 3</div>
+            <div>Sinh</div>
+            <div>Địa lý</div>
+            <div>Công nghệ</div>
+            <div>Tin học</div>
+            <div>Văn</div>
+        </div>
+
+        <div class="row">
+            <div>Tiết 4</div>
+            <div>Hóa</div>
+            <div>Công nghệ</div>
+            <div>Địa lý</div>
+            <div>Vật lý</div>
+            <div>Tin học</div>
+        </div>
+
+        <div class="row">
+            <div>Tiết 5</div>
+            <div>Vật lý</div>
+            <div>Hóa</div>
+            <div>Toán</div>
+            <div>Anh văn</div>
+            <div>Sinh hoạt lớp</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
