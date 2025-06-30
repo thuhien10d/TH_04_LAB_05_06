@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio cá nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #e0f7fa;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;"> Portfolio Cá Nhân</h1>
+
+  <div class="portfolio">
+    <div class="card">
+      <img src="https://picsum.photos/id/1011/400/250" alt="Dự án 1">
+      <div class="card-content">
+        <h3>Website bán sách</h3>
+        <p>Trang web bán sách online với giỏ hàng, tìm kiếm và thanh toán đơn giản.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1025/400/250" alt="Dự án 2">
+      <div class="card-content">
+        <h3>Ứng dụng To-do</h3>
+        <p>Quản lý công việc cá nhân hằng ngày với chức năng thêm, sửa, xóa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/103/400/250" alt="Dự án 3">
+      <div class="card-content">
+        <h3>Trang portfolio</h3>
+        <p>Giới thiệu bản thân, kỹ năng, dự án, và liên hệ.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
