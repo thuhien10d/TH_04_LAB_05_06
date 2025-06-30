@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Thanh Toán</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    .checkout-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-section {
+      display: grid;
+      gap: 15px;
+    }
+
+    .form-section label {
+      font-weight: bold;
+    }
+
+    .form-section input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkout-form button {
+      grid-column: span 2;
+      padding: 12px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .checkout-form button:hover {
+      background: #218838;
+    }
+
+    @media (max-width: 600px) {
+      .checkout-form {
+        grid-template-columns: 1fr;
+      }
+
+      .checkout-form button {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="checkout-form">
+   
+    <div class="form-section">
+      <h3>Thông Tin Người Nhận</h3>
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-section">
+      <h3>Thông Tin Thanh Toán</h3>
+      <label for="card">Số thẻ:</label>
+      <input type="text" id="card" name="card" required>
+
+      <label for="expiry">Ngày hết hạn:</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+      <label for="cvv">Mã CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+    </div>
+
+    <button type="submit">Thanh Toán</button>
+  </form>
+
+</body>
+</html>
