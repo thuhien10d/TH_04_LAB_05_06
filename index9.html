@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio MP3</title>
+  <style>
+    .audio-card {
+      display: grid;
+      grid-template-rows: auto auto auto; /* 2 mô tả + 1 audio */
+      gap: 10px;
+      max-width: 450px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(55, 24, 24, 0.262);
+      font-family: Arial, sans-serif;
+    }
+
+    .audio-card .title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #ce3131;
+    }
+
+    .audio-card .description {
+      font-size: 14px;
+      text-align: center;
+      color: #222;
+    }
+
+    .audio-card audio {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="audio-card">
+    <div class="title"> Truyện thiếu nhi: Cây khế</div>
+    <div class="description">Một câu chuyện dân gian ý nghĩa về lòng tham và sự công bằng.</div>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+      Trình duyệt của bạn không hỗ trợ phát âm thanh.
+    </audio>
+  </div>
+
+</body>
+</html>
+
