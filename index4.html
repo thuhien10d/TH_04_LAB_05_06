@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    input, select, textarea {
+      flex: 1 1 45%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    textarea {
+      flex: 1 1 100%;
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #08add2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4ebfce;
+    }
+
+    @media (max-width: 600px) {
+      input, select {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2> Đăng ký thông tin</h2>
+
+  <div class="form-container">
+    <form>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Số điện thoại">
+      <select required>
+        <option value="">Chọn ngành học</option>
+        <option value="tmdt">Thương mại điện tử</option>
+        <option value="cntt">Công nghệ thông tin</option>
+        <option value="marketing">Kế toán</option>
+        <option value="marketing">Tài chính ngân hàng</option>
+      </select>
+      <textarea placeholder="Ghi chú thêm..."></textarea>
+      <button type="submit">Gửi đăng ký</button>
+    </form>
+  </div>
+
+</body>
+</html>
