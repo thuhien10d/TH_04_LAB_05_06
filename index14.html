@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Gửi Phản Hồi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .feedback-form {
+      display: grid;
+      gap: 15px;
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .feedback-form label {
+      font-weight: bold;
+    }
+
+    .feedback-form button {
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    .feedback-form button:hover {
+      background: #0056b3;
+    }
+        }
+  </style>
+</head>
+<body>
+
+  <form class="feedback-form">
+    <label for="name">Tên của bạn:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <label for="Phản hồi">Phản hồi:</label>
+     <textarea rows="4" placeholder="Nội dung phản hồi"></textarea>
+      
+    <label for="Đánh giá">Đánh giá</label>
+     <div class="rating" >
+        <label>1 star</label><input type="radio" name="rating" value="1">
+        <label>2 star</label><input type="radio" name="rating" value="2">
+        <label>3 star</label><input type="radio" name="rating" value="3">
+        <label>4 star</label><input type="radio" name="rating" value="4">
+        <label>5 star</label><input type="radio" name="rating" value="5">
+    
+    <button type="submit">Gửi Phản Hồi</button>
+  </form>
+
+</body>
+</html>
