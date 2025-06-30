@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Bán Điện Thoại</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      color: green;
+      font-weight: bold;
+      margin: 5px 0 10px;
+    }
+
+    .product-card button {
+      padding: 8px 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Điện Thoại Bán Chạy</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://traidepbaniphone.com/thumbs/760x540x2/upload/product/14plusstar-7240.png" alt="Phone 1">
+      <h3>iPhone 14</h3>
+      <p>21.990.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/vn/2302/gallery/vn-galaxy-s23-s911-sm-s911bzebxxv-534847975?$720_576_JPG$" alt="Phone 2">
+      <h3>Samsung Galaxy S23</h3>
+      <p>18.490.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://xiaomivietnam.com/wp-content/uploads/2024/08/4-23.png" alt="Phone 3">
+      <h3>Xiaomi 13T</h3>
+      <p>12.990.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+  </div>
+
+</body>
+</html>
