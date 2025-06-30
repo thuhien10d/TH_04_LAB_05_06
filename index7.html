@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư viện ảnh</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    @media (max-width: 992px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Thư viện ảnh</h2>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/400/300" alt="Ảnh 1">
+    <img src="https://picsum.photos/id/1016/400/300" alt="Ảnh 2">
+    <img src="https://picsum.photos/id/1018/400/300" alt="Ảnh 3">
+    <img src="https://picsum.photos/id/1019/400/300" alt="Ảnh 4">
+    <img src="https://picsum.photos/id/1020/400/300" alt="Ảnh 5">
+    <img src="https://picsum.photos/id/1021/400/300" alt="Ảnh 6">
+  </div>
+
+</body>
+</html>
