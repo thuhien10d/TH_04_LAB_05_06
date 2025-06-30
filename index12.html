@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Khảo sát ý kiến</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .survey-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .survey-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .flex-options {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .flex-options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: normal;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      min-height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="survey-form">
+    <h2>Khảo sát ý kiến</h2>
+
+    <div class="form-group">
+      <label>Bạn hài lòng với sản phẩm không?</label>
+      <div class="flex-options">
+        <label><input type="radio" name="satisfaction" value="yes"> Có</label>
+        <label><input type="radio" name="satisfaction" value="no"> Không</label>
+        <label><input type="radio" name="satisfaction" value="neutral"> Bình thường</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Bạn quan tâm đến yếu tố nào? (có thể chọn nhiều)</label>
+      <div class="flex-options">
+        <label><input type="checkbox" name="factor" value="price"> Giá cả</label>
+        <label><input type="checkbox" name="factor" value="quality"> Chất lượng</label>
+        <label><input type="checkbox" name="factor" value="service"> Dịch vụ</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Ý kiến đóng góp:</label>
+      <textarea placeholder="Nhập ý kiến của bạn..."></textarea>
+    </div>
+
+    <button type="submit">Gửi phản hồi</button>
+  </form>
+
+</body>
+</html>
