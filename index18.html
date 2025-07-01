@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Tin Tức</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .news-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #0077b6;
+    }
+
+    .news-content p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tin Tức Mới Nhất</h1>
+
+  <div class="news-grid">
+    <div class="news-card">
+      <img src="https://baohoabinh.com.vn/Includes/NewsDetail/4_2022/dt_2042022937_2.jpg" alt="Tin 1">
+      <div class="news-content">
+        <h3>Du lịch Việt Nam phục hồi mạnh</h3>
+        <p>Sau dịch, lượng khách nội địa và quốc tế tăng trưởng nhanh chóng ở các thành phố du lịch.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://synnexfpt.com/wp-content/uploads/2025/01/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled-1.jpeg" alt="Tin 2">
+      <div class="news-content">
+        <h3>Công nghệ AI bùng nổ năm 2025</h3>
+        <p>Nhiều doanh nghiệp chuyển đổi số, áp dụng trí tuệ nhân tạo vào hoạt động sản xuất và dịch vụ.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://congdankhuyenhoc.qltns.mediacdn.vn/449484899827462144/2023/3/21/gia-xang-dau-16793921625782136066781.jpg" alt="Tin 3">
+      <div class="news-content">
+        <h3>Giá xăng giảm nhẹ</h3>
+        <p>Bộ Công Thương vừa công bố đợt điều chỉnh giá xăng dầu, giảm nhẹ so với tuần trước.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
