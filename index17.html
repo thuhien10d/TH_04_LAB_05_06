@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Du Lịch Đà Lạt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 15px;
+      background: #4db8ff;
+      color: white;
+      margin: 0;
+    }
+    
+    .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .text h3 {
+      color: #0077b6;
+    }
+
+     .text p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+        .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .image {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Khám Phá Đà Lạt</h2>
+
+  <div class="container">
+    <div class="text">
+      <h3>Giới thiệu</h3>
+      <p>Đà Lạt là thành phố du lịch nổi tiếng với khí hậu mát mẻ, cảnh quan thơ mộng và các điểm đến như Hồ Xuân Hương, Thung lũng Tình Yêu, Đồi chè Cầu Đất...</p>
+      <p>Nơi đây thích hợp cho nghỉ dưỡng, chụp ảnh, và khám phá thiên nhiên.</p>
+    </div>
+
+    <div class="image">
+      <img src="https://static.vinwonders.com/production/da-lat-ve-dem-4.jpg" alt="Ảnh Đà Lạt">
+    </div>
+  </div>
+
+</body>
+</html>
