@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch Sự Kiện</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .day {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      min-height: 70px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .day h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      color: #0077b6;
+    }
+
+    .event {
+      background: #e0f7fa;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 700px) {
+      .calendar {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lịch Sự Kiện Tuần Này</h2>
+
+  <div class="calendar">
+    <div class="day">
+      <h4>Thứ 2</h4>
+      <div class="event">Họp nhóm 9h</div>
+    </div>
+    <div class="day">
+      <h4>Thứ 3</h4>
+      <div class="event">Workshop kỹ năng</div>
+    </div>
+    <div class="day">
+      <h4>Thứ 4</h4>
+    </div>
+    <div class="day">
+      <h4>Thứ 5</h4>
+      <div class="event">Thuyết trình dự án</div>
+    </div>
+    <div class="day">
+      <h4>Thứ 6</h4>
+      <div class="event">Họp công ty</div>
+    </div>
+    <div class="day">
+      <h4>Thứ 7</h4>
+    </div>
+    <div class="day">
+      <h4>Chủ nhật</h4>
+      <div class="event">Team building</div>
+    </div>
+  </div>
+
+</body>
+</html>
